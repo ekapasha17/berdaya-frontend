@@ -1,6 +1,6 @@
 # berdaya
 
-> A Vue.js project
+> A Vue.js project for berdaya.id project
 
 ## Build Setup
 
