@@ -1,5 +1,5 @@
 <template>
-  <div class="hello" id="hello">
+  <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -84,10 +84,8 @@
 </template>
 
 <script>
-import Register from './Register'
 export default {
   name: 'HelloWorld',
-  components: { 'register': Register },
   data () {
     return {
       msg: 'Yay'
