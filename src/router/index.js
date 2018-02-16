@@ -3,7 +3,6 @@ import Router from 'vue-router'
 import Register from '@/components/Register'
 
 Vue.use(Router)
-window.Vue = require('vue')
 
 export default new Router({
   routes: [

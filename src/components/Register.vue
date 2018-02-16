@@ -30,27 +30,44 @@
 </template>
 
 <script>
+import Vue from 'vue'
 export default {
   name: 'Register'
 }
-</script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
-
-<script>
 Vue.component('step1', {
   template: '#step1',
   props: [
     'currentStep',
     'step1'
   ]
-});
+})
 
 Vue.component('step2', {
-template: '#step2',
+  template: '#step2',
   props: [
     'currentStep',
     'step2'
   ]
-});
+})
+
+Vue.component('step3', {
+  template: '#step3',
+  props: [
+    'currentStep',
+    'step1',
+    'step2'
+  ]
+})
+
+var app = new Vue({
+  el: '#register',
+  data: {
+    currentStep: 1,
+    step1: {
+      name: '',
+      email: ''
+    },
+    message: ''
+  }
+})
 </script>
