@@ -36,7 +36,7 @@ export default {
 }
 
 var app = new Vue({
-  el: '#register'
+  el: document.getElementById('register')
 })
 
 console.log(app)
